@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>{% block title %}Welcome!{% endblock %}</title>
+
+    {% block stylesheets %}
+        <link href="/assets/default/css/indigo.css" media="screen" rel="stylesheet" type="text/css" id="style-container" data-color="indigo" data-theme-path="default">
+    {% endblock %}
+
+</head>
+<body>
+
+<div class="blog-masthead">
+    <div class="container">
+        <nav class="nav blog-nav">
+            <a class="nav-link active" href="/blog">Blog</a>
+            <a class="nav-link" href="#">New features</a>
+            <a class="nav-link" href="#">Press</a>
+            <a class="nav-link" href="#">New hires</a>
+            <a class="nav-link" href="#">About</a>
+        </nav>
+    </div>
+</div>
+
+{% block body %}{% endblock %}
+
+<footer class="blog-footer">
+    <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a
+                href="https://twitter.com/mdo">@mdo</a>.</p>
+    <p>
+        <a href="#">Back to top</a>
+    </p>
+</footer>
+
+<!-- Scripts -->
+<script type="text/javascript" src="/assets/default/js/script.js"></script>
+
+{% block javascripts %}{% endblock %}
+</body>
+</html>

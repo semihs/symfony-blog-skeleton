@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="blog-header">
+        <div class="container">
+            <h1 class="blog-title">The Bootstrap Blog</h1>
+            <p class="lead blog-description">An example blog template built with Bootstrap.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <article>
+            <h2>{{ post.title }}</h2>
+            <p>
+                {{ post.content|raw }}
+            </p>
+        </article>
+    </div>
+
+{% endblock %}
+
+{% block title %}{{ post.title }}{% endblock %}

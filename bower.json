@@ -1,0 +1,12 @@
+{
+  "name": "cms-app",
+  "dependencies": {
+    "Font-Awesome": "~4",
+    "bootstrap": "4.0.0-alpha.4",
+    "tether": "~1.1.1",
+    "speakingurl": "~9.0.0"
+  },
+  "resolutions": {
+    "jquery": ">=1.9"
+  }
+}
